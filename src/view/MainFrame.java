@@ -24,7 +24,7 @@ public class MainFrame extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				ProdutosController.newResource(new HashMap());
+				ProdutosController.newResource();
 			}
 			
 		});
@@ -34,6 +34,7 @@ public class MainFrame extends JFrame {
 		setJMenuBar(menuBar);
 		
 		setSize(500, 400);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setExtendedState(getExtendedState() | JFrame.MAXIMIZED_BOTH);
 	}
 	
